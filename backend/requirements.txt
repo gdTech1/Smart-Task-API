@@ -1,0 +1,18 @@
+fastapi
+uvicorn[standard]
+
+# - Banco de dados
+sqlalchemy
+
+# - Validação / schemas
+pydantic
+
+# - Variáveis de ambiente
+python-dotenv
+
+# - Testes
+pytest
+
+# - Testar a API internamente
+httpx
+
