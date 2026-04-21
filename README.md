@@ -64,7 +64,7 @@ This project simulates the backend of a **modern productivity SaaS platform**.
 - FastAPI
 - Pydantic
 - Uvicorn
-- SQLite (or PostgreSQL optional)
+- SQLite
 
 ---
 
