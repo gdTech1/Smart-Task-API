@@ -13,7 +13,7 @@ class TaskBase(BaseModel):
 # - Criar a tarefa
 # ────────────────────────────────
 class TaskCreate(TaskBase):
-    due_data: Optional[datetime] = None
+    due_date: Optional[datetime] = None
     
 # ────────────────────────────────
 # - Atualizar a tarefa
