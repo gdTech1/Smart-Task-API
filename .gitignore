@@ -16,8 +16,14 @@ env/
 # ────────────────────────────────
 # ENV FILES 
 # ────────────────────────────────
+# ENV FILES
 .env
-.env.*
+.env.local
+.env.development
+.env.production
+
+# allow example file
+!.env.example
 
 # ────────────────────────────────
 # DATABASES
