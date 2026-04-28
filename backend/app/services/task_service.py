@@ -1,13 +1,19 @@
 from sqlalchemy.orm import Session
 from app.models.task import Task
 from app.schemas.task import TaskCreate
+from app.ml.predictor import predict_priority
 
 
 def create_task(db: Session, task_data: TaskCreate):
+    text = f"{task_data.title} {task_data.description or ''}"
+
+    priority = predict_priority(text)
+
     task = Task(
         title=task_data.title,
         description=task_data.description,
         due_date=task_data.due_date,
+        priority_level=priority
     )
 
     db.add(task)
